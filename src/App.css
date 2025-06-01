@@ -1,0 +1,21 @@
+.scrollbar-none::-webkit-scrollbar{
+    display: none;
+}
+.code{
+    background-color: rgb(195, 195, 195);
+    border-radius: 5px;
+    padding-left: 3px;
+}
+body{
+    transition-property: opacity,
+    trnsform,filter, background;
+    transition-timing-function: 
+    ease-in-out;
+    transition-duration: 200ms;
+}
+.transitioning{
+    opacity: 0;
+    background: black;
+    transform: translateY(40px);
+    filter: blur(12px);
+}
