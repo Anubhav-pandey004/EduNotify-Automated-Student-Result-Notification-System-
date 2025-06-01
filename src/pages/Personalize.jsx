@@ -13,7 +13,6 @@ const Personalize = () => {
     setLoading(true); // Set loading to true when form is submitted
 
     // Log the form data
-    console.log("Form Submitted:", { email, subject, message });
 
     try {
       const response = await fetch(SummaryApi.sendEmail.url, {
@@ -25,7 +24,6 @@ const Personalize = () => {
         },
       });
       const data = await response.json(); // Parse the JSON response from the backend
-      console.log(data);
 
       if (data.success) {
         toast.success(data.message); // Show success toast notification
