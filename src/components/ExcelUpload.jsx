@@ -27,7 +27,7 @@ const ExcelUpload = () => {
     formData.append("excelFile", file);
 
     try {
-      const response = await fetch("http://localhost:8080/upload", {
+      const response = await fetch("https://edunotify.onrender.com/upload", {
         method: "POST",
         credentials: "include",
         body: formData,
