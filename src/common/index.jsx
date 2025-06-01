@@ -1,7 +1,7 @@
 
 
 
-const backendDomin = "http://localhost:8080"
+const backendDomin = "https://edunotify.onrender.com"
 
 const SummaryApi={
     signup:{
