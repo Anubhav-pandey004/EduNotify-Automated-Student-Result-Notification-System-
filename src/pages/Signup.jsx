@@ -30,7 +30,6 @@ const Signup = () => {
     })
     
     let response = await dataResponse.json()
-    console.log(response);
     
     if (response.success) {
       toast.success(response.message)
