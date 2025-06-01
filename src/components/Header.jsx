@@ -14,7 +14,6 @@ const Header = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.user.user1);
   const { fetchUserDetails } = useContext(Context);
-  console.log("Current user is: ",user);
   
   const handleLogout = async () => {
     try {
